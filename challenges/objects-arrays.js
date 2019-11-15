@@ -79,6 +79,8 @@ const universities = [];
 for (let item of graduates){
   universities.push(item.university);
 }
+universities.sort((a, b) => a.localeCompare(b));
+
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
